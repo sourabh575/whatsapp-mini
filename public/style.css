@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e5ddd5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Chat Container */
+.container {
+    width: 90%;
+    max-width: 450px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* New Chat Button */
+.new-chat {
+    background-color: #25d366;
+    color: white;
+    font-size: 14px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.new-chat:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.05);
+}
+
+/* Chat List */
+.chat-list {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* Chat Box */
+.chat {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.chat:hover {
+    transform: scale(1.02);
+}
+
+/* Message Bubble */
+.message {
+    background-color: #007aff;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: inline-block;
+    max-width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.message:hover {
+    transform: scale(1.05);
+}
+
+/* Sender & Receiver */
+.from, .to {
+    font-size: 13px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.chat i {
+    font-weight: bold;
+    color: #222;
+}
+
+/* Scrollbar (for Chat List) */
+.chat-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chat-list::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .chat {
+        padding: 12px;
+    }
+
+    .message {
+        padding: 8px;
+    }
+}
